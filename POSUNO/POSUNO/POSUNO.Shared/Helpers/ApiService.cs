@@ -24,7 +24,8 @@ namespace POSUNO.Helpers
 
                 HttpClient client = new HttpClient(handler)
                 {
-                    BaseAddress = new Uri("https://localhost:44369/")
+                    //BaseAddress = new Uri("https://localhost:44369/")
+                    BaseAddress = new Uri("http://keypress.serveftp.net/POSUNO.Web/")
                 };
 
                 HttpResponseMessage response = await client.PostAsync("api/Account/Login", content);
